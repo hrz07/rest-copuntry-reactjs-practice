@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Countries from './components/countries/Countries';
 
 
 function App() {
   return (
-   
-   <h1>ok</h1>
+   <Countries />
   );
 }
 
