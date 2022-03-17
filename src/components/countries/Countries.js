@@ -13,12 +13,14 @@ const Countries = () => {
     return (
         <div>
             <h3 className='text-center fw-bold my-5'>{data.length} Countries Data Fount</h3>
-            
-            {
-                data.map(country=> <Country countryData={country} />)
-            }
-                
-        
+            <div className='container row row-cols-3 mx-auto'>
+                {
+                    data.map(country => <Country key={country.name.common} countryData={country} />)
+                }
+            </div>
+
+
+
         </div>
     );
 }

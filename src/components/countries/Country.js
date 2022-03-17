@@ -4,7 +4,7 @@ const Country = ({ countryData }) => {
 
     return (
         <div>
-            <div className="card my-2" style={{width: '18rem'}}>
+            <div className="card my-4 rounded-lg" style={{width: '18rem'}}>
                 <img src={countryData.flags.png} className="card-img-top" alt="..." />
                     <div className="card-body shadow-lg">
                         <h4 className="card-title fw-bold text-danger">{countryData.name.common}</h4>
